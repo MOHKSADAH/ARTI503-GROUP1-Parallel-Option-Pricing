@@ -1,0 +1,275 @@
+{
+  "parameters": {
+    "S0": 100.0,
+    "K": 100.0,
+    "r": 0.05,
+    "sigma": 0.2,
+    "T": 1.0,
+    "num_steps": 252
+  },
+  "system": {
+    "max_cores": 16,
+    "tested_cores": [
+      1,
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  "black_scholes": {
+    "call": 10.450583572185565
+  },
+  "benchmarks": [
+    {
+      "num_simulations": 10000,
+      "results_by_cores": [
+        {
+          "num_cores": 1,
+          "execution_time": 3.868939500000124,
+          "speedup": 1.0,
+          "efficiency": 100.0,
+          "mc_price": 10.718240896018775,
+          "standard_error": 0.14797986417240866,
+          "price_error_pct": 2.561171077044788
+        },
+        {
+          "num_cores": 2,
+          "execution_time": 2.2229355999998006,
+          "speedup": 1.740464051230486,
+          "efficiency": 87.0232025615243,
+          "mc_price": 10.718240896018775,
+          "standard_error": 0.14797986417240866,
+          "price_error_pct": 2.561171077044788
+        },
+        {
+          "num_cores": 4,
+          "execution_time": 1.4932676000003084,
+          "speedup": 2.5909217477157642,
+          "efficiency": 64.7730436928941,
+          "mc_price": 10.718240896018775,
+          "standard_error": 0.14797986417240866,
+          "price_error_pct": 2.561171077044788
+        },
+        {
+          "num_cores": 6,
+          "execution_time": 1.3297249000002012,
+          "speedup": 2.909578891092089,
+          "efficiency": 48.492981518201475,
+          "mc_price": 10.718240896018775,
+          "standard_error": 0.14797986417240866,
+          "price_error_pct": 2.561171077044788
+        },
+        {
+          "num_cores": 8,
+          "execution_time": 1.3023512999998275,
+          "speedup": 2.9707341636627818,
+          "efficiency": 37.134177045784774,
+          "mc_price": 10.718240896018775,
+          "standard_error": 0.14797986417240866,
+          "price_error_pct": 2.561171077044788
+        }
+      ]
+    },
+    {
+      "num_simulations": 50000,
+      "results_by_cores": [
+        {
+          "num_cores": 1,
+          "execution_time": 16.524431000000277,
+          "speedup": 1.0,
+          "efficiency": 100.0,
+          "mc_price": 10.396580768132166,
+          "standard_error": 0.0654052514595905,
+          "price_error_pct": 0.5167443873385996
+        },
+        {
+          "num_cores": 2,
+          "execution_time": 8.827783199999885,
+          "speedup": 1.8718664273495629,
+          "efficiency": 93.59332136747814,
+          "mc_price": 10.396580768132166,
+          "standard_error": 0.0654052514595905,
+          "price_error_pct": 0.5167443873385996
+        },
+        {
+          "num_cores": 4,
+          "execution_time": 4.931535299999723,
+          "speedup": 3.350768066083032,
+          "efficiency": 83.7692016520758,
+          "mc_price": 10.396580768132166,
+          "standard_error": 0.0654052514595905,
+          "price_error_pct": 0.5167443873385996
+        },
+        {
+          "num_cores": 6,
+          "execution_time": 3.8587432999997873,
+          "speedup": 4.282334873118196,
+          "efficiency": 71.37224788530327,
+          "mc_price": 10.396580768132166,
+          "standard_error": 0.0654052514595905,
+          "price_error_pct": 0.5167443873385996
+        },
+        {
+          "num_cores": 8,
+          "execution_time": 3.4795162000000346,
+          "speedup": 4.749059941149322,
+          "efficiency": 59.36324926436652,
+          "mc_price": 10.396580768132166,
+          "standard_error": 0.0654052514595905,
+          "price_error_pct": 0.5167443873385996
+        }
+      ]
+    },
+    {
+      "num_simulations": 100000,
+      "results_by_cores": [
+        {
+          "num_cores": 1,
+          "execution_time": 32.541307699999834,
+          "speedup": 1.0,
+          "efficiency": 100.0,
+          "mc_price": 10.426507935412385,
+          "standard_error": 0.04638055372754336,
+          "price_error_pct": 0.23037600347273995
+        },
+        {
+          "num_cores": 2,
+          "execution_time": 16.87357239999983,
+          "speedup": 1.928536940997756,
+          "efficiency": 96.4268470498878,
+          "mc_price": 10.426507935412385,
+          "standard_error": 0.04638055372754336,
+          "price_error_pct": 0.23037600347273995
+        },
+        {
+          "num_cores": 4,
+          "execution_time": 9.233658399999968,
+          "speedup": 3.5242052814082823,
+          "efficiency": 88.10513203520706,
+          "mc_price": 10.426507935412385,
+          "standard_error": 0.04638055372754336,
+          "price_error_pct": 0.23037600347273995
+        },
+        {
+          "num_cores": 6,
+          "execution_time": 7.029453699999976,
+          "speedup": 4.629279754698426,
+          "efficiency": 77.1546625783071,
+          "mc_price": 10.426507935412385,
+          "standard_error": 0.04638055372754336,
+          "price_error_pct": 0.23037600347273995
+        },
+        {
+          "num_cores": 8,
+          "execution_time": 6.190464399999655,
+          "speedup": 5.25668279426688,
+          "efficiency": 65.70853492833601,
+          "mc_price": 10.426507935412385,
+          "standard_error": 0.04638055372754336,
+          "price_error_pct": 0.23037600347273995
+        }
+      ]
+    },
+    {
+      "num_simulations": 500000,
+      "results_by_cores": [
+        {
+          "num_cores": 1,
+          "execution_time": 164.62311839999984,
+          "speedup": 1.0,
+          "efficiency": 100.0,
+          "mc_price": 10.436682600482394,
+          "standard_error": 0.020733980751695837,
+          "price_error_pct": 0.13301622447351696
+        },
+        {
+          "num_cores": 2,
+          "execution_time": 89.22269310000001,
+          "speedup": 1.8450812532131449,
+          "efficiency": 92.25406266065724,
+          "mc_price": 10.436682600482394,
+          "standard_error": 0.020733980751695837,
+          "price_error_pct": 0.13301622447351696
+        },
+        {
+          "num_cores": 4,
+          "execution_time": 50.681340399999954,
+          "speedup": 3.248199773343011,
+          "efficiency": 81.20499433357527,
+          "mc_price": 10.436682600482394,
+          "standard_error": 0.020733980751695837,
+          "price_error_pct": 0.13301622447351696
+        },
+        {
+          "num_cores": 6,
+          "execution_time": 33.758202299999994,
+          "speedup": 4.876536876491195,
+          "efficiency": 81.27561460818659,
+          "mc_price": 10.436682600482394,
+          "standard_error": 0.020733980751695837,
+          "price_error_pct": 0.13301622447351696
+        },
+        {
+          "num_cores": 8,
+          "execution_time": 27.93801089999988,
+          "speedup": 5.892442342772532,
+          "efficiency": 73.65552928465665,
+          "mc_price": 10.436682600482394,
+          "standard_error": 0.020733980751695837,
+          "price_error_pct": 0.13301622447351696
+        }
+      ]
+    },
+    {
+      "num_simulations": 1000000,
+      "results_by_cores": [
+        {
+          "num_cores": 1,
+          "execution_time": 325.5503411999998,
+          "speedup": 1.0,
+          "efficiency": 100.0,
+          "mc_price": 10.434693694904192,
+          "standard_error": 0.014695365694068223,
+          "price_error_pct": 0.15204775093769596
+        },
+        {
+          "num_cores": 2,
+          "execution_time": 192.63221059999978,
+          "speedup": 1.6900098907965302,
+          "efficiency": 84.5004945398265,
+          "mc_price": 10.434693694904192,
+          "standard_error": 0.014695365694068223,
+          "price_error_pct": 0.15204775093769596
+        },
+        {
+          "num_cores": 4,
+          "execution_time": 103.79051819999995,
+          "speedup": 3.136609652267831,
+          "efficiency": 78.41524130669578,
+          "mc_price": 10.434693694904192,
+          "standard_error": 0.014695365694068223,
+          "price_error_pct": 0.15204775093769596
+        },
+        {
+          "num_cores": 6,
+          "execution_time": 73.46397760000036,
+          "speedup": 4.43142818882704,
+          "efficiency": 73.85713648045066,
+          "mc_price": 10.434693694904192,
+          "standard_error": 0.014695365694068223,
+          "price_error_pct": 0.15204775093769596
+        },
+        {
+          "num_cores": 8,
+          "execution_time": 60.06346880000001,
+          "speedup": 5.420105560070479,
+          "efficiency": 67.751319500881,
+          "mc_price": 10.434693694904192,
+          "standard_error": 0.014695365694068223,
+          "price_error_pct": 0.15204775093769596
+        }
+      ]
+    }
+  ]
+}
