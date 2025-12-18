@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "S0": 100.0,
+    "K": 100.0,
+    "r": 0.05,
+    "sigma": 0.2,
+    "T": 1.0,
+    "num_steps": 252
+  },
+  "black_scholes": {
+    "call": 10.450583572185565,
+    "put": 5.573526022256971
+  },
+  "benchmarks": [
+    {
+      "num_simulations": 10000,
+      "execution_time": 3.029431500006467,
+      "time_per_path_ms": 0.3029431500006467,
+      "mc_price": 10.221084439796249,
+      "standard_error": 0.1446060694740172,
+      "price_error_pct": 2.196041310077004
+    },
+    {
+      "num_simulations": 50000,
+      "execution_time": 15.018383200003882,
+      "time_per_path_ms": 0.30036766400007764,
+      "mc_price": 10.348499954504778,
+      "standard_error": 0.06539241466349079,
+      "price_error_pct": 0.9768221743375601
+    },
+    {
+      "num_simulations": 100000,
+      "execution_time": 30.123148700004094,
+      "time_per_path_ms": 0.30123148700004093,
+      "mc_price": 10.399363140099382,
+      "standard_error": 0.04632806088512972,
+      "price_error_pct": 0.49012030507565957
+    },
+    {
+      "num_simulations": 500000,
+      "execution_time": 152.0849317999964,
+      "time_per_path_ms": 0.3041698635999928,
+      "mc_price": 10.410098843700236,
+      "standard_error": 0.020766562802103306,
+      "price_error_pct": 0.38739203610676015
+    },
+    {
+      "num_simulations": 1000000,
+      "execution_time": 310.87476379999134,
+      "time_per_path_ms": 0.31087476379999135,
+      "mc_price": 10.424668540466257,
+      "standard_error": 0.014711121215896444,
+      "price_error_pct": 0.24797688607821775
+    }
+  ]
+}
